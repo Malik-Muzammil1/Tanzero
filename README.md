@@ -1,7 +1,6 @@
 # Tranzero — Modern Customer Ledger Management System
 
 <div align="center">
-  <img src="https://placehold.co/150x150.png" alt="Tranzero Logo" width="120" />
   <h1>Tranzero</h1>
   <p>
     A modern, real-time, and collaborative ledger management system built for teams.<br />
