@@ -1,99 +1,168 @@
-
-# Tranzero: Customer Ledger Management System
+# Tranzero — Modern Customer Ledger Management System
 
 <div align="center">
-  <img src="https://placehold.co/150x150.png" alt="Tranzero Logo" data-ai-hint="scale balance" width="120">
-  <h1 align="center">Tranzero</h1>
-  <p align="center">
-    A modern, real-time, and collaborative ledger management system built for teams.
-    <br />
-    <a href="#"><strong>Explore the live demo Â»</strong></a>
-    <br />
-    <br />
+  <img src="https://placehold.co/150x150.png" alt="Tranzero Logo" width="120" />
+  <h1>Tranzero</h1>
+  <p>
+    A modern, real-time, and collaborative ledger management system built for teams.<br />
+    Designed for speed, simplicity, and clarity across all your financial records.
   </p>
+  <a href="#"><strong>🚀 Try the Live Demo »</strong></a>
 </div>
-
-Tranzero is a powerful yet intuitive web application designed to help businesses manage customer transactions, track balances, and collaborate seamlessly. Built with a robust, modern tech stack, it provides a fast, secure, and user-friendly experience that works flawlessly on both desktop and mobile devices.
 
 ---
 
-## âœ¨ Key Features
+## ✨ Overview
 
-- **Full Customer Management**: Add, edit, and archive customer profiles with ease.
-- **Detailed Transaction Tracking**: Record receivable (credit) and payable (debit) transactions for each customer.
-- **Partial Payments System**: Log multiple payments against a single transaction until it's fully settled.
-- **Real-time Balance Calculation**: Instantly see customer balances, total receivables, and total payables.
-- **Team Collaboration**:
-    - Invite members to your team via unique, secure links.
-    - Role-based access control (Owner vs. Member).
-    - Team-wide activity log for owners to track important actions.
-- **Progressive Web App (PWA)**: Install Tranzero on your phone for a native, offline-first mobile experience.
-- **Data Export**: Export customer data or a full system backup to both **PDF** and **CSV** formats.
-- **AI-Powered Insights**: Uses Genkit to provide intelligent account status badges (Credit, Debit, Settled).
-- **Customization**:
-    - Personalize the look and feel with multiple **color themes**.
-    - Seamless **dark and light mode** support.
-    - Choose your preferred currency (USD, EUR, GBP, PKR).
-- **Responsive Design**: A beautiful and functional interface on any screen size, from mobile phones to widescreen monitors.
+**Tranzero** is a powerful, intuitive web application for managing customer transactions, monitoring balances, and collaborating within teams — all in real time. Whether you're a small business owner or part of a larger accounting team, Tranzero makes tracking finances effortless.
 
-## ðŸ› ï¸ Tech Stack
+---
 
-Tranzero is built with a modern, type-safe, and scalable technology stack:
+## 🔑 Features
 
-- **Framework**: [Next.js 14+](https://nextjs.org/) (App Router)
-- **UI**: [React](https://react.dev/) & [TypeScript](https://www.typescriptlang.org/)
-- **Styling**: [Tailwind CSS](https://tailwindcss.com/)
-- **Component Library**: [ShadCN UI](https://ui.shadcn.com/)
-- **Database & Auth**: [Firebase](https://firebase.google.com/) (Firestore & Authentication)
-- **AI Functionality**: [Genkit](https://firebase.google.com/docs/genkit)
-- **PWA**: [@ducanh2912/next-pwa](https://www.npmjs.com/package/@ducanh2912/next-pwa)
-- **Icons**: [Lucide React](https://lucide.dev/)
+- **Customer Profiles**  
+  Add, edit, archive, and manage customer data in seconds.
 
-## ðŸš€ Getting Started
+- **Smart Transaction Tracking**  
+  Record both receivables (credit) and payables (debit) — with full history.
 
-To get a local copy up and running, follow these simple steps.
+- **Partial Payments**  
+  Split settlements across multiple entries until a transaction is fully cleared.
+
+- **Live Balances**  
+  See customer totals, net receivables, and outstanding payables update instantly.
+
+- **Team Collaboration**  
+  - Invite teammates via secure links  
+  - Assign Owner or Member roles  
+  - View a shared activity log for transparency
+
+- **AI-Powered Status Tags**  
+  Using **Genkit**, Tranzero automatically labels accounts as Credit, Debit, or Settled.
+
+- **Data Export**  
+  Download customer data or entire backups as **PDF** or **CSV**.
+
+- **Progressive Web App (PWA)**  
+  Install on your device for a native, offline-first mobile experience.
+
+- **Theme & Currency Customization**  
+  - Light/dark mode  
+  - Multiple color themes  
+  - Supports USD, EUR, GBP, PKR, and more
+
+- **Fully Responsive Design**  
+  Smooth, fast UI across mobile, tablet, and desktop screens.
+
+---
+
+## 🛠 Tech Stack
+
+Tranzero is built using a robust, modern, and scalable stack:
+
+| Area            | Tech Stack |
+|-----------------|------------|
+| **Framework**   | [Next.js 14+](https://nextjs.org/) with App Router |
+| **Frontend**    | [React](https://react.dev/), [TypeScript](https://www.typescriptlang.org/) |
+| **Styling**     | [Tailwind CSS](https://tailwindcss.com/) |
+| **UI Components**| [ShadCN UI](https://ui.shadcn.com/), [Lucide Icons](https://lucide.dev/) |
+| **Database & Auth** | [Firebase Firestore & Auth](https://firebase.google.com/) |
+| **AI Features** | [Genkit by Firebase](https://firebase.google.com/docs/genkit) |
+| **PWA**         | [@ducanh2912/next-pwa](https://www.npmjs.com/package/@ducanh2912/next-pwa) |
+
+---
+
+## 🚀 Getting Started
+
+Follow these steps to set up Tranzero on your local machine.
 
 ### Prerequisites
 
-- Node.js (v18 or newer)
-- npm or yarn
+- **Node.js** (v18+)
+- **npm** or **yarn**
 
 ### Installation
 
-1.  **Clone the repository**
-    ```sh
-    git clone https://github.com/your-username/tranzero.git
-    cd tranzero
-    ```
-2.  **Install NPM packages**
-    ```sh
-    npm install
-    ```
-3.  **Set up your Firebase project**
-    - Create a new project on the [Firebase Console](https://console.firebase.google.com/).
-    - Enable **Firestore** and **Authentication** (with the Email/Password provider).
-    - Go to Project Settings -> Web Apps, and copy your Firebase configuration object.
+1. **Clone the Repository**
 
-4.  **Create an environment file**
-    - In the root of your project, create a new file named `.env.local`.
-    - Add your Firebase configuration keys to this file:
-      ```env
-      NEXT_PUBLIC_FIREBASE_API_KEY=your_api_key
-      NEXT_PUBLIC_FIREBASE_AUTH_DOMAIN=your_auth_domain
-      NEXT_PUBLIC_FIREBASE_PROJECT_ID=your_project_id
-      NEXT_PUBLIC_FIREBASE_MESSAGING_SENDER_ID=your_sender_id
-      NEXT_PUBLIC_FIREBASE_APP_ID=your_app_id
-      ```
-5.  **Run the development server**
-    ```sh
-    npm run dev
-    ```
-    Open [http://localhost:3000](http://localhost:3000) with your browser to see the result. You can now sign up and start using the app!
+```bash
+git clone https://github.com/Malik-Muzammil1/Tranzero.git
+cd Tranzero
 
-## ðŸ¤ Contributing
+2. Install Dependencies
 
-Contributions are what make the open-source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
+
+
+npm install
+
+3. Configure Firebase
+
+
+
+Create a project on Firebase Console
+
+Enable:
+
+Firestore Database
+
+Authentication (Email/Password)
+
+
+Go to Project Settings → Web App, and copy the Firebase config
+
+
+4. Create Environment File
+
+
+
+Create a file named .env.local in the root of your project and paste your Firebase config:
+
+NEXT_PUBLIC_FIREBASE_API_KEY=your_api_key
+NEXT_PUBLIC_FIREBASE_AUTH_DOMAIN=your_auth_domain
+NEXT_PUBLIC_FIREBASE_PROJECT_ID=your_project_id
+NEXT_PUBLIC_FIREBASE_MESSAGING_SENDER_ID=your_sender_id
+NEXT_PUBLIC_FIREBASE_APP_ID=your_app_id
+
+5. Run the App
+
+
+
+npm run dev
+
+Visit http://localhost:3000 — and you're live!
+
 
 ---
 
-Built with â¤ï¸ in Firebase Studio.
+🤝 Contributing
+
+We welcome contributions from the community!
+If you have ideas, bugs, or improvements:
+
+1. Fork the project
+
+
+2. Create your branch (git checkout -b feature/feature-name)
+
+
+3. Commit your changes (git commit -m 'Add feature')
+
+
+4. Push to the branch (git push origin feature/feature-name)
+
+
+5. Open a Pull Request
+
+
+
+
+---
+
+📄 License
+
+This project is open source and available under the MIT License.
+
+
+---
+
+> Built with ❤️ using Firebase Studio and Next.js.
